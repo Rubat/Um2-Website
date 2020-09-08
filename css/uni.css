@@ -1,0 +1,408 @@
+body{
+  font-family: Verdana,sans-serif;
+  /*background-image: url("breh.jpg");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
+  /*background-color: black;*/*/
+}
+
+.image-class{
+  max-width: 100%;
+  height: 300px;
+}
+.tabs{
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.navbar{
+  margin-bottom: 0 !important;
+}
+.parallax{
+  background-image: url("aye.png");
+
+  /* Set a specific height */
+  height: auto;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2{
+  /*background-image: url("breh.jpg");*/
+  background-image: url("brh.jpg");
+
+  /* Set a specific height */
+  height: auto;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  /*background-repeat: no-repeat;*/
+  background-size: cover;
+}
+
+
+.parallax3{
+  /*background-image: url("breh.jpg");*/
+  background-image: url("bg7.jpg");
+
+  /* Set a specific height */
+  height: auto;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  /*background-repeat: no-repeat;*/
+  background-size: cover;
+}
+
+.parallax4{
+  /*background-image: url("breh.jpg");*/
+  background-image: url("bg5.jpg");
+
+  /* Set a specific height */
+  height: auto;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  /*background-repeat: no-repeat;*/
+  background-size: cover;
+}
+
+
+/* yahan tak*/
+.border{
+  background-color: #90A4AE;
+  border: 5px solid #90A4AE;
+  border-radius: 20px;
+  border-style: inset;
+  margin: auto;
+  /*margin-left: 70px;
+  margin-right: 70px;*/
+
+}
+
+.sectionBorder{
+  border: 10px solid black;
+  background-color: black;
+}
+
+.sectionText{
+  text-align: center;
+  color:White;
+  font-size: 30px;
+}
+
+.nawaborder{
+  background-color: #90A4AE;
+  border: 10px solid #90A4AE;
+  border-radius: 25px;
+  /*border-style: inset;*/
+  /*margin-left: 70px;
+  margin-right: 70px;*/
+}
+
+.contBorder{
+  border-radius: 20px;
+}
+
+.imageBorder{
+  border-radius: 100px;
+}
+.pText{
+
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  /*margin-left: 30px;*/
+}
+
+#lel{
+  margin-top: 100px;
+  float: left;
+}
+
+/*Jump shashkay*/
+@keyframes jump {
+  0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+  40%  {transform: translate3d(0,30%,0) scale3d(.7,1.5,1);}
+  100% {transform: translate3d(0,100%,0) scale3d(1.5,.7,1);}
+}
+.jump {
+  transform-origin: 50% 50%;
+  animation: jump .95s linear alternate 2 ;
+}
+
+/*overlay shashkay */
+.container {
+  position: relative;
+
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: auto;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100px;
+  width: 100px;
+
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/* slideShow */
+
+
+* {box-sizing:border-box}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+.fadeVideo{
+
+    -webkit-animation-name: fadeVideo;
+    -webkit-animation-duration: 1s;
+    animation-name: fadeVideo;
+    animation-duration: 10s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .9}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .9}
+  to {opacity: 1}
+}
+
+@-webkit-keyframes fadeVideo {
+  from {opacity: 1}
+  to {opacity: 1}
+}
+
+@keyframes fadeVideo {
+  from {opacity: 1}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/*Cards*/
+
+/* Style the container with a rounded border, grey background and some padding and margin */
+.containerCards {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+/* Clear floats after containers */
+.containerCards::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.containerCards img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* Increase the font-size of a span element */
+.containerCards span {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+  .containerCards {
+    text-align: center;
+  }
+
+  .containerCards img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+
+/*Accordion Buttons*/
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accBorder{
+  border: 5px solid lightgrey;
+  border-radius: 20px;
+  background-color: lightgrey;
+}
+
+/*Gallery Css*/
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: 250px;
+}
+
+div.gallery video{
+  width: 100%;
+  height: 250px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
